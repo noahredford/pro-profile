@@ -17,6 +17,7 @@ body {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 20px;
+    border: #5CDB95 solid 3px;
 }
 
 .subtitle {
@@ -94,12 +95,4 @@ nav a:focus {
     nav li {
         margin: 5px 0;
     }
-}
-
-.img-noah {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 19%;
-    
 }
