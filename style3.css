@@ -28,7 +28,7 @@ body {
     text-align: center;
     border-top: silver solid 4px;
     border-bottom: silver solid 4px;
-    
+
 }
 
 .container {
@@ -69,7 +69,37 @@ nav a:focus {
     color: silver;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 500px) {
+
+    .main {
+        text-align: center;
+    }
+
+    .subtitle {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .container-nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+}
+
+
+@media (max-width: 1355px) {
 
     .main {
         text-align: center;
@@ -94,5 +124,37 @@ nav a:focus {
 
     nav li {
         margin: 5px 0;
+        justify-content: space-evenly;
     }
+
+}
+
+.row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 4px 4px;
+        justify-content: center;
+        display: flex;
+}
+      
+      /* Create two equal columns that sits next to each other */
+.column {
+        flex: 50%;
+        padding: 4px 4px;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+        justify-content: space-evenly;
+        height: 100px;
+        width: 100px;
+}
+.column img {
+        margin-top: 80px;
+        vertical-align: middle;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 300px;
+        width: 500px;
 }
