@@ -18,8 +18,10 @@ body {
     margin-top: 30px;
     margin-bottom: 20px;
     border: #5CDB95 solid 3px;
-    display: flex;
-    flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
 }
 
 .subtitle {
@@ -30,7 +32,7 @@ body {
     text-align: center;
     border-top: silver solid 4px;
     border-bottom: silver solid 4px;
-    
+
 }
 
 .container {
@@ -71,6 +73,47 @@ nav a:focus {
     color: silver;
 }
 
+@media (max-width: 1335px) {
+
+    .main {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .subtitle {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .container-nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 5px 0;
+        justify-content: space-evenly;
+    }
+
+    #contact-box {
+        text-align: center;
+
+    }
+
+    #phone-line {
+        text-align: center;
+    }
+
+}
+
 @media (max-width: 640px) {
 
     .main {
@@ -109,48 +152,8 @@ nav a:focus {
         flex-wrap: wrap;
     }
 
-
 }
 
-
-@media (max-width: 1355px) {
-
-    .main {
-        text-align: center;
-    }
-
-    .subtitle {
-        text-align: center;
-        flex-direction: column;
-    }
-
-    .container {
-        text-align: center;
-    }
-
-    .container-nav {
-        flex-direction: column;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav li {
-        margin: 5px 0;
-        justify-content: space-evenly;
-    }
-
-    #contact-box {
-        text-align: center;
-
-    }
-
-    #phone-line {
-        text-align: center;
-    }
-
-}
 
 #contact-box {
     border: #5CDB95 solid 5px;
